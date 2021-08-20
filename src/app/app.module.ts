@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CourseModule } from './courses/course.module';
-import { Error404Component } from './error404/error-404.component';
 
 
 @NgModule({
@@ -20,10 +19,6 @@ import { Error404Component } from './error404/error-404.component';
         path: '',
         redirectTo: 'courses',
         pathMatch: 'full'
-      },      
-      {
-        path: '**',
-        component: Error404Component,
       }
     ])
   ],
